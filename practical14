@@ -1,0 +1,96 @@
+Program: 14 
+ 
+Code: 1))  
+  //Practical 14.1: Print Pattern. 
+ 
+ 
+#include<stdio.h> 
+void main() 
+{   int x,y; 
+   // Here Row Is Fixed. 
+    int rows = 5; 
+    //Here First Loop Stands For Each Row. 
+    for (int x = 1; x <= rows; x++) { 
+        //Here Inner Loop For Printing Values In Each Row. 
+        for (int y = 1; y <= x; y++) { 
+             // Here Condition For Check Row Is Even Or Odd. 
+            if (y % 2 == 1) { 
+               //Printing Number Like Print 1 For Even Row And 0 For Odd Rows. 
+                printf("1 "); 
+            } else { 
+                printf("0 "); 
+            } 
+        } 
+        // Here Printf Stand For New Line In Pattern.
+            printf("\n"); 
+    } 
+ 
+ 
+} 
+ 
+2)) 
+ 
+    //Practical 14(2): Print Pattern 
+ 
+ 
+ 
+#include <stdio.h> 
+ 
+int main() { 
+    int i, j, k; 
+    int rows = 5; // Here Row Is Fixed. 
+    //Here Loop Stands For Rows. 
+    for (i = 1; i <= rows; i++) { 
+        // Here First Inner Loop Stands For Put Space. 
+        for (j = rows; j > i; j--) { 
+            printf("   "); 
+        } 
+             printf("%d  ", k); 
+        } 
+ 
+        //Here Printf Stands For New Line. 
+        printf("\n"); 
+    } 
+ 
+ 
+ 
+ 
+} 
+3)) 
+// Practical 14(3): Print Pattern. 
+ 
+#include <stdio.h> 
+void main() 
+{ 
+    int n,r,x; 
+    printf("How Many Rows You Want??: "); 
+    scanf("%d",&n); 
+    printf("\n"); 
+    // Here First Loop Stands For Rotates The Rows Of Patterns. 
+    for(r=1 ; r<=n ; r++) 
+    { 
+        for(int c=1 ; c<=(n-r) ; c++) 
+        { 
+          printf("   "); 
+        } 
+         x=65; 
+          // Here Second Loop Stands For Print The Elements Of Pattern Column Vise. 
+        for(int c=1 ; c<=r ; c++) 
+        { 
+            printf(" %c " , x); 
+            x++; 
+        } 
+        x = x-2; 
+        for(int c=1 ; c<=r-1 ; c++) 
+        { 
+            printf(" %c " , x); 
+            x--; 
+        } 
+        printf("\n"); 
+    } 
+    printf("\n\n\n24ce032_TARAN ");
+}
+ 
+        // Print numbers 
+        for (k = 1; k <= i; k++) { 
+        
